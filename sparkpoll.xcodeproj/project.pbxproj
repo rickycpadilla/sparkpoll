@@ -10,7 +10,7 @@
 		23806AE6AFBADF4969FDC30C /* Pods_sparkpoll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC13088410AEDE42CB184DEC /* Pods_sparkpoll.framework */; };
 		2F3615A3E5568F9F13C24F28 /* Pods_sparkpollUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94553E4C347CA25E370AB324 /* Pods_sparkpollUITests.framework */; };
 		AFD3E59569DC08B181B90F84 /* Pods_sparkpoll_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931F1049BD8482D62FD130DD /* Pods_sparkpoll_WatchKit_App.framework */; };
-		B024C9331D8DE33E0065D093 /* PollTableMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B024C9321D8DE33E0065D093 /* PollTableMasterViewController.swift */; };
+		B0280BE11D8DFDF1004A2AAD /* PollMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */; };
 		B063A0E01D8D0C3B008714A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */; };
 		B063A0E21D8D0C3B008714A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A0E11D8D0C3B008714A5 /* ViewController.swift */; };
 		B063A0E51D8D0C3B008714A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063A0E31D8D0C3B008714A5 /* Main.storyboard */; };
@@ -27,7 +27,6 @@
 		B063A11F1D8D0C3C008714A5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A11E1D8D0C3C008714A5 /* NotificationController.swift */; };
 		B063A1211D8D0C3C008714A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B063A1201D8D0C3C008714A5 /* Assets.xcassets */; };
 		B0762C301D8DAB5D0024F461 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0762C2F1D8DAB5D0024F461 /* GoogleService-Info.plist */; };
-		B0948CDC1D8DE91700195175 /* PollTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0948CDB1D8DE91700195175 /* PollTableDetailViewController.swift */; };
 		B7CC3E6FC55990D11A080F43 /* Pods_sparkpoll_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0064D29CD99475BEF94D80 /* Pods_sparkpoll_WatchKit_Extension.framework */; };
 		E1F3FB658E4B046B3E792CD8 /* Pods_sparkpollTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72A0B694367BADC1BF5394 /* Pods_sparkpollTests.framework */; };
 /* End PBXBuildFile section */
@@ -99,7 +98,7 @@
 		8F4CB2EFE5FAA539817E5C92 /* Pods-sparkpoll WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll WatchKit Extension/Pods-sparkpoll WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		931F1049BD8482D62FD130DD /* Pods_sparkpoll_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkpoll_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94553E4C347CA25E370AB324 /* Pods_sparkpollUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkpollUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B024C9321D8DE33E0065D093 /* PollTableMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollTableMasterViewController.swift; sourceTree = "<group>"; };
+		B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollMasterTableViewController.swift; path = PollTableControllers/PollMasterTableViewController.swift; sourceTree = "<group>"; };
 		B063A0DC1D8D0C3B008714A5 /* sparkpoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkpoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B063A0E11D8D0C3B008714A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +124,6 @@
 		B063A1201D8D0C3C008714A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B063A1221D8D0C3C008714A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0762C2F1D8DAB5D0024F461 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B0948CDB1D8DE91700195175 /* PollTableDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollTableDetailViewController.swift; sourceTree = "<group>"; };
 		BD2448A20FA185EE21ED0639 /* Pods-sparkpoll WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll WatchKit App/Pods-sparkpoll WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		C824BFEDB909EDB2143DF904 /* Pods-sparkpollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpollTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpollTests/Pods-sparkpollTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BBC663B196B597B368BC13 /* Pods-sparkpoll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll/Pods-sparkpoll.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,12 +219,11 @@
 				B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */,
 				B063A0E11D8D0C3B008714A5 /* ViewController.swift */,
 				B063A0E31D8D0C3B008714A5 /* Main.storyboard */,
-				B024C9321D8DE33E0065D093 /* PollTableMasterViewController.swift */,
 				B063A0E61D8D0C3B008714A5 /* Assets.xcassets */,
 				B063A0E81D8D0C3B008714A5 /* LaunchScreen.storyboard */,
 				B063A0EB1D8D0C3B008714A5 /* Info.plist */,
 				B0762C2F1D8DAB5D0024F461 /* GoogleService-Info.plist */,
-				B0948CDB1D8DE91700195175 /* PollTableDetailViewController.swift */,
+				B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */,
 			);
 			path = sparkpoll;
 			sourceTree = "<group>";
@@ -710,10 +707,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B024C9331D8DE33E0065D093 /* PollTableMasterViewController.swift in Sources */,
+				B0280BE11D8DFDF1004A2AAD /* PollMasterTableViewController.swift in Sources */,
 				B063A0E21D8D0C3B008714A5 /* ViewController.swift in Sources */,
 				B063A0E01D8D0C3B008714A5 /* AppDelegate.swift in Sources */,
-				B0948CDC1D8DE91700195175 /* PollTableDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

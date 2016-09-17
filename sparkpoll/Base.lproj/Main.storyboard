@@ -128,13 +128,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54W-3v-kJY">
-                                <frame key="frameInset" minX="56" minY="522" width="99" height="30"/>
+                                <frame key="frameInset" minX="82" minY="57" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Create my poll"/>
                                 <connections>
-                                    <segue destination="YYW-MZ-1rL" kind="show" id="d5c-My-xve"/>
+                                    <segue destination="jHp-2i-E1w" kind="show" id="UOX-Ly-9oX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -145,90 +145,81 @@
             </objects>
             <point key="canvasLocation" x="930" y="-252"/>
         </scene>
-        <!--Poll Detail View Controller-->
-        <scene sceneID="3uh-KU-1mj">
+        <!--View Controller-->
+        <scene sceneID="bgI-BA-V8D">
             <objects>
-                <viewController id="W1M-hg-9dd" customClass="PollDetailViewController" customModule="sparkpoll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pgx-Kr-op9" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="u7t-Dw-oer"/>
-                        <viewControllerLayoutGuide type="bottom" id="lSO-np-Met"/>
+                        <viewControllerLayoutGuide type="top" id="sO4-PR-gXq"/>
+                        <viewControllerLayoutGuide type="bottom" id="GCA-yx-koG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VdC-pw-Bez" customClass="P">
+                    <view key="view" contentMode="scaleToFill" id="GNw-Qi-QJ8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="poll goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMt-AU-18o">
-                                <frame key="frameInset" minX="63" minY="99" width="108" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bd1-tr-MaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FoD-f7-UWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="53.523238380809602"/>
+            <point key="canvasLocation" x="2591" y="76"/>
         </scene>
         <!--Root View Controller-->
-        <scene sceneID="QJv-kb-o4T">
+        <scene sceneID="rza-Zc-Xia">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="CnJ-Og-yzm" customClass="PollTableMasterViewController" customModule="sparkpoll" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="t3i-sg-PHi">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="Jfv-fp-R0Z" customClass="PollMasterTableViewController" customModule="sparkpoll" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qkd-3z-jqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="7jO-Au-QyN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ckm-V7-V2J">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7jO-Au-QyN" id="vfY-Kr-tem">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ckm-V7-V2J" id="PkP-Fe-Prn">
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="CnJ-Og-yzm" id="vf7-4v-yQc"/>
-                            <outlet property="delegate" destination="CnJ-Og-yzm" id="xpO-8k-JEh"/>
+                            <outlet property="dataSource" destination="Jfv-fp-R0Z" id="xlT-1v-3Qz"/>
+                            <outlet property="delegate" destination="Jfv-fp-R0Z" id="AdP-KI-BZX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ncm-ry-4Pq"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="SmX-Vf-bB9"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5nK-sj-OSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mlo-e1-mPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3762" y="-762"/>
+            <point key="canvasLocation" x="3542" y="-579"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="YFl-cS-FsL">
+        <scene sceneID="AJc-bS-1nB">
             <objects>
-                <navigationController id="FJ6-4M-A14" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0xZ-az-pW7">
+                <navigationController id="8bR-kk-4pR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eZl-ii-wYW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="CnJ-Og-yzm" kind="relationship" relationship="rootViewController" id="Ib3-bx-7NC"/>
+                        <segue destination="Jfv-fp-R0Z" kind="relationship" relationship="rootViewController" id="TkV-b4-edF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rj2-fb-NQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPF-6i-04z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="-762"/>
+            <point key="canvasLocation" x="2591" y="-579"/>
         </scene>
         <!--Split View Controller-->
-        <scene sceneID="zSq-1R-Z6d">
+        <scene sceneID="o6E-4A-OpL">
             <objects>
-                <splitViewController id="YYW-MZ-1rL" sceneMemberID="viewController">
+                <splitViewController id="jHp-2i-E1w" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="FJ6-4M-A14" kind="relationship" relationship="masterViewController" id="lYm-Tm-szJ"/>
-                        <segue destination="W1M-hg-9dd" kind="relationship" relationship="detailViewController" id="oa2-lc-ViI"/>
+                        <segue destination="8bR-kk-4pR" kind="relationship" relationship="masterViewController" id="MTs-gM-Xpl"/>
+                        <segue destination="pgx-Kr-op9" kind="relationship" relationship="detailViewController" id="Vx5-M6-POI"/>
                     </connections>
                 </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gEf-pe-hGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hd-14-piy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="-435"/>
+            <point key="canvasLocation" x="1638" y="-251"/>
         </scene>
     </scenes>
 </document>

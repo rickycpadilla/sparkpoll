@@ -1,5 +1,5 @@
 //
-//  PollTableDetailViewController.swift
+//  PollMasterTableViewController.swift
 //  sparkpoll
 //
 //  Created by Alexander Murphy on 9/17/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PollTableDetailViewController: UITableViewController {
+class PollMasterTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +37,15 @@ class PollTableDetailViewController: UITableViewController {
         return 0
     }
 
-    
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-//
-//         // Configure the cell...
-//
-//        return cell
-//    }
- 
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
