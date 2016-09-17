@@ -27,9 +27,35 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         view.backgroundColor = UIColor.gray
         
         //get user location
+        func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+            switch status {
+            case .notDetermined:
+                // If status has not yet been determied, ask for authorization
+                manager.requestWhenInUseAuthorization()
+                break
+            case .authorizedWhenInUse:
+                // If authorized when in use
+                manager.startUpdatingLocation()
+                break
+            case .authorizedAlways:
+                // If always authorized
+                manager.startUpdatingLocation()
+                break
+            case .restricted:
+                // If restricted by e.g. parental controls. User can't enable Location Services
+                break
+            case .denied:
+                // If user denied your app access to Location Services, but can grant access from Settings.app
+                break
+            }
+        }
+        
         locManager.delegate = self
-        locManager.desiredAccuracy = kCLLocationAccuracyBest
+        // Getting user permission for location data
         locManager.requestAlwaysAuthorization()
+        locManager.requestWhenInUseAuthorization()
+        
+        locManager.desiredAccuracy = kCLLocationAccuracyBest
         locManager.startMonitoringSignificantLocationChanges()
         
         // check if authorization was granted
