@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYE-xg-m1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="448"/>
+            <point key="canvasLocation" x="930" y="492"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SKu-tX-Vo5">
@@ -145,38 +145,47 @@
             </objects>
             <point key="canvasLocation" x="930" y="-252"/>
         </scene>
-        <!--View Controller-->
+        <!--Poll Detail View Controller-->
         <scene sceneID="3uh-KU-1mj">
             <objects>
-                <viewController id="W1M-hg-9dd" sceneMemberID="viewController">
+                <viewController id="W1M-hg-9dd" customClass="PollDetailViewController" customModule="sparkpoll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u7t-Dw-oer"/>
                         <viewControllerLayoutGuide type="bottom" id="lSO-np-Met"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VdC-pw-Bez">
+                    <view key="view" contentMode="scaleToFill" id="VdC-pw-Bez" customClass="P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="poll goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMt-AU-18o">
+                                <frame key="frameInset" minX="63" minY="99" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bd1-tr-MaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="-107"/>
+            <point key="canvasLocation" x="2812" y="53.523238380809602"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="QJv-kb-o4T">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="CnJ-Og-yzm" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="CnJ-Og-yzm" customClass="PollTableMasterViewController" customModule="sparkpoll" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="t3i-sg-PHi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7jO-Au-QyN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="7jO-Au-QyN">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7jO-Au-QyN" id="vfY-Kr-tem">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
