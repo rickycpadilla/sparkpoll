@@ -409,6 +409,7 @@
 				TargetAttributes = {
 					B063A0DB1D8D0C3B008714A5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9L49SS68XP;
 						ProvisioningStyle = Automatic;
 					};
 					B063A0EF1D8D0C3B008714A5 = {
@@ -953,6 +954,8 @@
 			baseConfigurationReference = D1BBC663B196B597B368BC13 /* Pods-sparkpoll.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9L49SS68XP;
 				INFOPLIST_FILE = sparkpoll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thexande.sparkpoll;
@@ -966,6 +969,8 @@
 			baseConfigurationReference = 1BAAF4829BAD82BD2F31F79E /* Pods-sparkpoll.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9L49SS68XP;
 				INFOPLIST_FILE = sparkpoll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thexande.sparkpoll;

@@ -14,12 +14,23 @@ import MapKit
 class ViewController: UIViewController, CLLocationManagerDelegate {
     // let firebaseRoot = FIRDatabase.database().reference()
     let locManager = CLLocationManager()
+    var lat = ""
+    var long = ""
     
     @IBOutlet weak var labelLatitude: UILabel!
     @IBOutlet weak var labelLongitude: UILabel!
     
     @IBAction func showUserLocation(_ sender: AnyObject) {
+        let location:CLLocationCoordinate2D = locManager.location!.coordinate
+        lat = String(location.latitude)
+        long = String(location.longitude)
+        
+        labelLatitude.text = lat
+        labelLongitude.text = long
+        
+        print("latHere", lat)
         print(locManager.location)
+
     }
     
     override func viewDidLoad() {
@@ -54,23 +65,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Getting user permission for location data
         locManager.requestAlwaysAuthorization()
         locManager.requestWhenInUseAuthorization()
-        
         locManager.desiredAccuracy = kCLLocationAccuracyBest
         locManager.startMonitoringSignificantLocationChanges()
         
-        // check if authorization was granted
-        if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedWhenInUse ||
-            CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedAlways)
-        {
-            print(locManager.location)
-            // let latitude = locManager.location.coordinate.latitude
-            // let longitude = locManager.location.coordinate.longitude
-            
-        } else {
-            labelLatitude.text = "Location not authorized"
-            labelLongitude.text = "Location not authorized"
-        }
+        //show user location
+        let location:CLLocationCoordinate2D = locManager.location!.coordinate
+        lat = String(location.latitude)
+        long = String(location.longitude)
+        
+        labelLatitude.text = lat
+        labelLongitude.text = long
+        
+        print("latHere", lat)
+        print(locManager.location)
+
+
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
