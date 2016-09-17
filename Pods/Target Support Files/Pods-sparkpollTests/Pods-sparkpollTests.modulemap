@@ -1,0 +1,6 @@
+framework module Pods_sparkpollTests {
+  umbrella header "Pods-sparkpollTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
