@@ -25,6 +25,7 @@
 		B063A11D1D8D0C3C008714A5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A11C1D8D0C3C008714A5 /* ExtensionDelegate.swift */; };
 		B063A11F1D8D0C3C008714A5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A11E1D8D0C3C008714A5 /* NotificationController.swift */; };
 		B063A1211D8D0C3C008714A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B063A1201D8D0C3C008714A5 /* Assets.xcassets */; };
+		B0762C301D8DAB5D0024F461 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0762C2F1D8DAB5D0024F461 /* GoogleService-Info.plist */; };
 		B7CC3E6FC55990D11A080F43 /* Pods_sparkpoll_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0064D29CD99475BEF94D80 /* Pods_sparkpoll_WatchKit_Extension.framework */; };
 		E1F3FB658E4B046B3E792CD8 /* Pods_sparkpollTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72A0B694367BADC1BF5394 /* Pods_sparkpollTests.framework */; };
 /* End PBXBuildFile section */
@@ -120,6 +121,7 @@
 		B063A11E1D8D0C3C008714A5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		B063A1201D8D0C3C008714A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B063A1221D8D0C3C008714A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0762C2F1D8DAB5D0024F461 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BD2448A20FA185EE21ED0639 /* Pods-sparkpoll WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll WatchKit App/Pods-sparkpoll WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		C824BFEDB909EDB2143DF904 /* Pods-sparkpollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpollTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpollTests/Pods-sparkpollTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BBC663B196B597B368BC13 /* Pods-sparkpoll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll/Pods-sparkpoll.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				B063A0E61D8D0C3B008714A5 /* Assets.xcassets */,
 				B063A0E81D8D0C3B008714A5 /* LaunchScreen.storyboard */,
 				B063A0EB1D8D0C3B008714A5 /* Info.plist */,
+				B0762C2F1D8DAB5D0024F461 /* GoogleService-Info.plist */,
 			);
 			path = sparkpoll;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B063A0EA1D8D0C3B008714A5 /* LaunchScreen.storyboard in Resources */,
+				B0762C301D8DAB5D0024F461 /* GoogleService-Info.plist in Resources */,
 				B063A0E71D8D0C3B008714A5 /* Assets.xcassets in Resources */,
 				B063A0E51D8D0C3B008714A5 /* Main.storyboard in Resources */,
 			);
