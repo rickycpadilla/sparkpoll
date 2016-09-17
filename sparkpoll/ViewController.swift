@@ -68,6 +68,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locManager.desiredAccuracy = kCLLocationAccuracyBest
         locManager.startMonitoringSignificantLocationChanges()
         
+        if locManager.location?.coordinate != nil {
         //show user location
         let location:CLLocationCoordinate2D = locManager.location!.coordinate
         lat = String(location.latitude)
@@ -78,7 +79,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         print("latHere", lat)
         print(locManager.location)
-
+        }
 
     }
     

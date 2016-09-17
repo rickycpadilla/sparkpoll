@@ -424,10 +424,12 @@
 					};
 					B063A1031D8D0C3C008714A5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9L49SS68XP;
 						ProvisioningStyle = Automatic;
 					};
 					B063A1121D8D0C3C008714A5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9L49SS68XP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -804,6 +806,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -854,6 +857,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -884,6 +888,7 @@
 			baseConfigurationReference = 2F650AA409A2FE9ED3DD8783 /* Pods-sparkpoll WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 9L49SS68XP;
 				INFOPLIST_FILE = "sparkpoll WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thexande.sparkpoll.watchkitapp.watchkitextension;
@@ -901,6 +906,7 @@
 			baseConfigurationReference = 8F4CB2EFE5FAA539817E5C92 /* Pods-sparkpoll WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 9L49SS68XP;
 				INFOPLIST_FILE = "sparkpoll WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thexande.sparkpoll.watchkitapp.watchkitextension;
@@ -919,6 +925,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9L49SS68XP;
 				IBSC_MODULE = sparkpoll_WatchKit_Extension;
 				INFOPLIST_FILE = "sparkpoll WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thexande.sparkpoll.watchkitapp;
@@ -937,6 +944,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9L49SS68XP;
 				IBSC_MODULE = sparkpoll_WatchKit_Extension;
 				INFOPLIST_FILE = "sparkpoll WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thexande.sparkpoll.watchkitapp;
