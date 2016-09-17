@@ -9,7 +9,25 @@
 import UIKit
 
 class PollMasterTableViewController: UITableViewController {
-
+    var monsters = [Monster]()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        self.monsters.append(Monster(name: "Cat-Bot", description: "MEE-OW",
+                                     iconName: "meetcatbot.png", weapon: Weapon.Sword))
+        self.monsters.append(Monster(name: "Dog-Bot", description: "BOW-WOW",
+                                     iconName: "meetdogbot.png", weapon: Weapon.Blowgun))
+        self.monsters.append(Monster(name: "Explode-Bot", description: "BOOM!",
+                                     iconName: "meetexplodebot.png", weapon: Weapon.Smoke))
+        self.monsters.append(Monster(name: "Fire-Bot", description: "Will Make You Stamed",
+                                     iconName: "meetfirebot.png", weapon: Weapon.NinjaStar))
+        self.monsters.append(Monster(name: "Ice-Bot", description: "Has A Chilling Effect",
+                                     iconName: "meeticebot.png", weapon: Weapon.Fire))
+        self.monsters.append(Monster(name: "Mini-Tomato-Bot", description: "Extremely Handsome",
+                                     iconName: "meetminitomatobot.png", weapon: Weapon.NinjaStar))
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +52,7 @@ class PollMasterTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return self.monsters.count
     }
 
     
@@ -42,6 +60,8 @@ class PollMasterTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         // Configure the cell...
+        let monster = self.monsters[indexPath.row]
+        cell.textLabel?.text = monster.name
 
         return cell
     }

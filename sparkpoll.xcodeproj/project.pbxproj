@@ -11,6 +11,8 @@
 		2F3615A3E5568F9F13C24F28 /* Pods_sparkpollUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94553E4C347CA25E370AB324 /* Pods_sparkpollUITests.framework */; };
 		AFD3E59569DC08B181B90F84 /* Pods_sparkpoll_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931F1049BD8482D62FD130DD /* Pods_sparkpoll_WatchKit_App.framework */; };
 		B0280BE11D8DFDF1004A2AAD /* PollMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */; };
+		B0280BE31D8E0381004A2AAD /* PollDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */; };
+		B0280BE51D8E04D7004A2AAD /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE41D8E04D7004A2AAD /* Monster.swift */; };
 		B063A0E01D8D0C3B008714A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */; };
 		B063A0E21D8D0C3B008714A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A0E11D8D0C3B008714A5 /* ViewController.swift */; };
 		B063A0E51D8D0C3B008714A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063A0E31D8D0C3B008714A5 /* Main.storyboard */; };
@@ -99,6 +101,8 @@
 		931F1049BD8482D62FD130DD /* Pods_sparkpoll_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkpoll_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94553E4C347CA25E370AB324 /* Pods_sparkpollUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkpollUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollMasterTableViewController.swift; path = PollTableControllers/PollMasterTableViewController.swift; sourceTree = "<group>"; };
+		B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollDetailViewController.swift; path = PollTableControllers/PollDetailViewController.swift; sourceTree = "<group>"; };
+		B0280BE41D8E04D7004A2AAD /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		B063A0DC1D8D0C3B008714A5 /* sparkpoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkpoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B063A0E11D8D0C3B008714A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 				B063A0EB1D8D0C3B008714A5 /* Info.plist */,
 				B0762C2F1D8DAB5D0024F461 /* GoogleService-Info.plist */,
 				B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */,
+				B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */,
+				B0280BE41D8E04D7004A2AAD /* Monster.swift */,
 			);
 			path = sparkpoll;
 			sourceTree = "<group>";
@@ -707,8 +713,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0280BE51D8E04D7004A2AAD /* Monster.swift in Sources */,
 				B0280BE11D8DFDF1004A2AAD /* PollMasterTableViewController.swift in Sources */,
 				B063A0E21D8D0C3B008714A5 /* ViewController.swift in Sources */,
+				B0280BE31D8E0381004A2AAD /* PollDetailViewController.swift in Sources */,
 				B063A0E01D8D0C3B008714A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
