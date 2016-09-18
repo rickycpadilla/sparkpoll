@@ -62,11 +62,6 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
         super.didReceiveMemoryWarning()
     }
     
-
-    
-    
-    //begin paste
-    
     private func prepareRecognizer(locale: Locale) {
         speechRecognizer = SFSpeechRecognizer(locale: locale)!
         speechRecognizer.delegate = self
@@ -128,29 +123,6 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
     }
     
     // =========================================================================
-    // MARK: - UIPickerViewDataSource
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return locales.count
-    }
-    
-    // =========================================================================
-    // MARK: - UIPickerViewDelegate
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return locales[row].identifier
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let locale = locales[row]
-        prepareRecognizer(locale: locale)
-    }
-    
-    // =========================================================================
     // MARK: - SFSpeechRecognizerDelegate
     
     public func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
@@ -177,7 +149,4 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
             startRecordingButton.setTitle("Stop recording", for: [])
         }
     }
-
-    
-    //end paste
 }

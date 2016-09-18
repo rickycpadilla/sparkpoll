@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>921570439899-pso63pvjnc3dqkgas5jo325pmkfva99q.apps.googleusercontent.com</string>
+	<string>426859634814-2fecfnr8aoi6ldmqs2qjtcqvv26rf89r.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.921570439899-pso63pvjnc3dqkgas5jo325pmkfva99q</string>
+	<string>com.googleusercontent.apps.426859634814-2fecfnr8aoi6ldmqs2qjtcqvv26rf89r</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCOX2KctwbJT6Y691HRNROww4-Df6AB5g4</string>
+	<string>AIzaSyCLgtOj_Z2ofrnQLgoopAZK7-hhByFtvJI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>921570439899</string>
+	<string>426859634814</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.thexande.sparkpoll</string>
+	<string>com.thexande.sparkpoll.watchkitapp.watchkitextension</string>
 	<key>PROJECT_ID</key>
-	<string>sparkpoll-329d7</string>
+	<string>sparkpoll-f7275</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sparkpoll-329d7.appspot.com</string>
+	<string>sparkpoll-f7275.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:921570439899:ios:245c5e398dda49f0</string>
+	<string>1:426859634814:ios:791c14c6fb1d937a</string>
 	<key>DATABASE_URL</key>
-	<string>https://sparkpoll-329d7.firebaseio.com</string>
+	<string>https://sparkpoll-f7275.firebaseio.com</string>
 </dict>
 </plist>
