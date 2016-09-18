@@ -222,17 +222,13 @@
 		B063A0DE1D8D0C3B008714A5 /* sparkpoll */ = {
 			isa = PBXGroup;
 			children = (
-				B0016AEE1D8E52C0004719E7 /* GoogleService-Info.plist */,
-				B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */,
-				B063A0E11D8D0C3B008714A5 /* ViewController.swift */,
-				B063A0E31D8D0C3B008714A5 /* Main.storyboard */,
 				B063A0E61D8D0C3B008714A5 /* Assets.xcassets */,
-				B063A0E81D8D0C3B008714A5 /* LaunchScreen.storyboard */,
-				B063A0EB1D8D0C3B008714A5 /* Info.plist */,
-				B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */,
-				B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */,
+				B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */,
+				B0AEB3F71D8F382700E4FB5E /* Storyboards */,
+				B0AEB3F61D8F37F300E4FB5E /* Configuration */,
+				B0AEB3F51D8F37E500E4FB5E /* Models */,
+				B0AEB3F41D8F37D400E4FB5E /* ViewControllers */,
 				B0280BE41D8E04D7004A2AAD /* Monster.swift */,
-				B0280BE61D8E2E64004A2AAD /* NewLightningPollViewController.swift */,
 			);
 			path = sparkpoll;
 			sourceTree = "<group>";
@@ -284,6 +280,50 @@
 				B063A1191D8D0C3C008714A5 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0AEB3F41D8F37D400E4FB5E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEB3FA1D8F391500E4FB5E /* PollMasterDetailViewControllers */,
+				B0280BE61D8E2E64004A2AAD /* NewLightningPollViewController.swift */,
+				B063A0E11D8D0C3B008714A5 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B0AEB3F51D8F37E500E4FB5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B0AEB3F61D8F37F300E4FB5E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B0016AEE1D8E52C0004719E7 /* GoogleService-Info.plist */,
+				B063A0EB1D8D0C3B008714A5 /* Info.plist */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		B0AEB3F71D8F382700E4FB5E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B063A0E81D8D0C3B008714A5 /* LaunchScreen.storyboard */,
+				B063A0E31D8D0C3B008714A5 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B0AEB3FA1D8F391500E4FB5E /* PollMasterDetailViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */,
+				B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */,
+			);
+			name = PollMasterDetailViewControllers;
 			sourceTree = "<group>";
 		};
 		C4C00DDE9F699764AFB2B564 /* Pods */ = {
