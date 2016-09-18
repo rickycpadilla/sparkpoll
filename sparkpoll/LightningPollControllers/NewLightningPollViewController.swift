@@ -8,9 +8,10 @@
 
 import UIKit
 import Speech
+import Firebase
 
 class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelegate {
-    
+    private var firebaseRootRef: FIRDatabaseReference!
     private var speechRecognizer: SFSpeechRecognizer!
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest!
     private var recognitionTask: SFSpeechRecognitionTask!
@@ -23,10 +24,16 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
+        // [START create_database_reference]
+        self.firebaseRootRef = FIRDatabase.database().reference()
+        // [END create_database_reference]
         super.viewDidLoad()
         startRecordingButton.isEnabled = false
         // english, do you speak it!?
         prepareRecognizer(locale: defaultLocale)
+        
+        // attempting to write to firebase TEST
+        self.writeNewLightningPoll(userID: "anon", title: "my first poll", poll_description: "my first description", origin_lat: 100, origin_lng: -100)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -61,7 +68,23 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    // [START Firebase create new lightning poll methods]
+    func writeNewLightningPoll(userID: String, title: String, poll_description: String, origin_lat: Int, origin_lng: Int) {
+        // attempting to create a new lightning poll on firebase
+        let key = firebaseRootRef.child("lightning_polls").childByAutoId().key
+        let lightning_poll = [
+            "uid": userID,
+            "title": title,
+            "poll_description": poll_description,
+            "origin_lat": origin_lat,
+            "origin_lng": origin_lng
+        ] as [String : Any]
+        let childUpdates = ["/lightning_polls/\(key)": lightning_poll]
+        firebaseRootRef.updateChildValues(childUpdates)
+    }
+    // [END Firebase create new lightning poll methods]
     
+    // [START speech recognition helper methods]
     private func prepareRecognizer(locale: Locale) {
         speechRecognizer = SFSpeechRecognizer(locale: locale)!
         speechRecognizer.delegate = self
