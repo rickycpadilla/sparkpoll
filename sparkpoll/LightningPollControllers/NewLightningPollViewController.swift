@@ -32,8 +32,11 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
         // english, do you speak it!?
         prepareRecognizer(locale: defaultLocale)
         
-        // attempting to write to firebase TEST
-        self.writeNewLightningPoll(userID: "anon", title: "my first poll", poll_description: "my first description", origin_lat: 100, origin_lng: -100)
+//        // attempting to write to firebase TEST
+//        self.writeNewLightningPoll(userID: "anon", title: "my first poll", poll_description: "my first description", origin_lat: 100, origin_lng: -100, is_open: false)
+        
+     let speechMapper = LightningPollSpeechHelper.parseUserSpeechToLightningPoll(userSpeech: "Trump or Hillary")
+    print(speechMapper)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -69,7 +72,7 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
         super.didReceiveMemoryWarning()
     }
     // [START Firebase create new lightning poll methods]
-    func writeNewLightningPoll(userID: String, title: String, poll_description: String, origin_lat: Int, origin_lng: Int) {
+    func writeNewLightningPoll(userID: String, title: String, poll_description: String, origin_lat: Int, origin_lng: Int, is_open: Bool) {
         // attempting to create a new lightning poll on firebase
         let key = firebaseRootRef.child("lightning_polls").childByAutoId().key
         let lightning_poll = [
@@ -77,7 +80,8 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
             "title": title,
             "poll_description": poll_description,
             "origin_lat": origin_lat,
-            "origin_lng": origin_lng
+            "origin_lng": origin_lng,
+            "is_open": is_open
         ] as [String : Any]
         let childUpdates = ["/lightning_polls/\(key)": lightning_poll]
         firebaseRootRef.updateChildValues(childUpdates)

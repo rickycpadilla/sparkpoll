@@ -15,15 +15,17 @@ class LightningPoll: NSObject {
     var poll_description: String
     var origin_lat: Int
     var origin_lng: Int
+    var is_open: Bool
     
-    init(uid: String, title: String, description: String, origin_lat: Int, origin_lng: Int) {
+    init(uid: String, title: String, description: String, origin_lat: Int, origin_lng: Int, is_open: Bool) {
         self.uid = uid
         self.title = title
         self.poll_description = description
         self.origin_lat = origin_lat
         self.origin_lng = origin_lng
+        self.is_open = is_open
     }
     convenience override init() {
-        self.init(uid: "", title: "", description: "", origin_lat: 0, origin_lng: 0)
+        self.init(uid: "", title: "", description: "", origin_lat: 0, origin_lng: 0, is_open: false)
     }
 }

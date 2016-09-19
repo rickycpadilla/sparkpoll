@@ -34,6 +34,7 @@
 		B0AEB3FE1D8F523A00E4FB5E /* BinaryQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB3FD1D8F523A00E4FB5E /* BinaryQuestion.swift */; };
 		B0AEB4001D8F524400E4FB5E /* BinaryAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB3FF1D8F524400E4FB5E /* BinaryAnswer.swift */; };
 		B0AEB4021D8F544A00E4FB5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB4011D8F544A00E4FB5E /* User.swift */; };
+		B0AEB4051D8F641400E4FB5E /* LightningPollSpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB4041D8F641400E4FB5E /* LightningPollSpeechHelper.swift */; };
 		B7CC3E6FC55990D11A080F43 /* Pods_sparkpoll_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0064D29CD99475BEF94D80 /* Pods_sparkpoll_WatchKit_Extension.framework */; };
 		E1F3FB658E4B046B3E792CD8 /* Pods_sparkpollTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72A0B694367BADC1BF5394 /* Pods_sparkpollTests.framework */; };
 /* End PBXBuildFile section */
@@ -138,6 +139,7 @@
 		B0AEB3FD1D8F523A00E4FB5E /* BinaryQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinaryQuestion.swift; path = Models/BinaryQuestion.swift; sourceTree = "<group>"; };
 		B0AEB3FF1D8F524400E4FB5E /* BinaryAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryAnswer.swift; sourceTree = "<group>"; };
 		B0AEB4011D8F544A00E4FB5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B0AEB4041D8F641400E4FB5E /* LightningPollSpeechHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightningPollSpeechHelper.swift; sourceTree = "<group>"; };
 		BD2448A20FA185EE21ED0639 /* Pods-sparkpoll WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll WatchKit App/Pods-sparkpoll WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		C824BFEDB909EDB2143DF904 /* Pods-sparkpollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpollTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpollTests/Pods-sparkpollTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BBC663B196B597B368BC13 /* Pods-sparkpoll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll/Pods-sparkpoll.debug.xcconfig"; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		B063A0DE1D8D0C3B008714A5 /* sparkpoll */ = {
 			isa = PBXGroup;
 			children = (
+				B0AEB4031D8F63E600E4FB5E /* HelperClasses */,
 				B063A0E61D8D0C3B008714A5 /* Assets.xcassets */,
 				B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */,
 				B0AEB3F71D8F382700E4FB5E /* Storyboards */,
@@ -336,6 +339,14 @@
 				B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */,
 			);
 			name = PollMasterDetailViewControllers;
+			sourceTree = "<group>";
+		};
+		B0AEB4031D8F63E600E4FB5E /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEB4041D8F641400E4FB5E /* LightningPollSpeechHelper.swift */,
+			);
+			name = HelperClasses;
 			sourceTree = "<group>";
 		};
 		C4C00DDE9F699764AFB2B564 /* Pods */ = {
@@ -773,6 +784,7 @@
 				B0280BE51D8E04D7004A2AAD /* Monster.swift in Sources */,
 				B0AEB4001D8F524400E4FB5E /* BinaryAnswer.swift in Sources */,
 				B0280BE71D8E2E64004A2AAD /* NewLightningPollViewController.swift in Sources */,
+				B0AEB4051D8F641400E4FB5E /* LightningPollSpeechHelper.swift in Sources */,
 				B0280BE11D8DFDF1004A2AAD /* PollMasterTableViewController.swift in Sources */,
 				B063A0E21D8D0C3B008714A5 /* ViewController.swift in Sources */,
 				B0280BE31D8E0381004A2AAD /* PollDetailViewController.swift in Sources */,
