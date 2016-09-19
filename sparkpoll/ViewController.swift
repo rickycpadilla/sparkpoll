@@ -12,7 +12,6 @@ import FirebaseDatabase
 import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-     let firebaseRoot = FIRDatabase.database().reference()
     
     let locManager = CLLocationManager()
     var lat = ""

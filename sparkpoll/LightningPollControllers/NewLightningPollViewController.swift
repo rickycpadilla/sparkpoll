@@ -9,8 +9,9 @@
 import UIKit
 import Speech
 import Firebase
+import MapKit
 
-class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelegate {
+class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelegate, CLLocationManagerDelegate {
     private var firebaseRootRef: FIRDatabaseReference!
     private var speechRecognizer: SFSpeechRecognizer!
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest!
@@ -18,6 +19,9 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
     private let audioEngine = AVAudioEngine()
     private var locales: [Locale]!
     private let defaultLocale = Locale(identifier: "en-US")
+    private let locManager = CLLocationManager()
+    private var userLatitude: Float64 = 0
+    private var userLongitude: Float64 = 0
     
     @IBOutlet weak var pollNameTextInput: UITextField!
     @IBOutlet weak var startRecordingButton: UIButton!
@@ -25,19 +29,60 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
     @IBOutlet weak var HoldAndRelease: UIButton!
     
     override func viewDidLoad() {
-        // [START create_database_reference]
-        self.firebaseRootRef = FIRDatabase.database().reference()
-        // [END create_database_reference]
+
         super.viewDidLoad()
         startRecordingButton.isEnabled = false
         // english, do you speak it!?
         prepareRecognizer(locale: defaultLocale)
         
 //        // attempting to write to firebase TEST
-//        self.writeNewLightningPoll(userID: "anon", title: "my first poll", poll_description: "my first description", origin_lat: 100, origin_lng: -100, is_open: false)
+//        FirebaseCRUDHelper.writeNewLightningPoll(userID: "anon", title: "my first poll", poll_description: "my first description", origin_lat: 100, origin_lng: -100, is_open: false)
         
 //     let speechMapper = LightningPollSpeechHelper.parseUserSpeechToLightningPoll(userSpeech: "Trump or Hillary")
 //    print(speechMapper)
+        
+        
+        
+        
+        //get user location
+        func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+            switch status {
+            case .notDetermined:
+                // If status has not yet been determied, ask for authorization
+                manager.requestWhenInUseAuthorization()
+                break
+            case .authorizedWhenInUse:
+                // If authorized when in use
+                manager.startUpdatingLocation()
+                break
+            case .authorizedAlways:
+                // If always authorized
+                manager.startUpdatingLocation()
+                break
+            case .restricted:
+                // If restricted by e.g. parental controls. User can't enable Location Services
+                break
+            case .denied:
+                // If user denied your app access to Location Services, but can grant access from Settings.app
+                break
+            }
+        }
+        
+        locManager.delegate = self
+        // Getting user permission for location data
+        locManager.requestAlwaysAuthorization()
+        locManager.requestWhenInUseAuthorization()
+        locManager.desiredAccuracy = kCLLocationAccuracyBest
+        locManager.startMonitoringSignificantLocationChanges()
+        
+        if locManager.location?.coordinate != nil {
+            //show user location
+            let location:CLLocationCoordinate2D = locManager.location!.coordinate
+            self.userLatitude = Float64(location.latitude)
+            self.userLongitude = Float64(location.longitude)
+            print(locManager.location)
+        }
+        //end location
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -73,22 +118,6 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
         super.didReceiveMemoryWarning()
     }
     
-    // [START Firebase create new lightning poll methods]
-    func writeNewLightningPoll(userID: String, title: String, poll_description: String, origin_lat: Int, origin_lng: Int, is_open: Bool) {
-        // attempting to create a new lightning poll on firebase
-        let key = firebaseRootRef.child("lightning_polls").childByAutoId().key
-        let lightning_poll = [
-            "uid": userID,
-            "title": title,
-            "poll_description": poll_description,
-            "origin_lat": origin_lat,
-            "origin_lng": origin_lng,
-            "is_open": is_open
-        ] as [String : Any]
-        let childUpdates = ["/lightning_polls/\(key)": lightning_poll]
-        firebaseRootRef.updateChildValues(childUpdates)
-    }
-    // [END Firebase create new lightning poll methods]
     
     // [START speech recognition helper methods]
     private func prepareRecognizer(locale: Locale) {
@@ -124,15 +153,16 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
             
             if let result = result {
                 self.textView.text = result.bestTranscription.formattedString
-//                let finalVoiceTextResult = result.bestTranscription.formattedString
-                // attempt to parse binary choices from user input
-//                let binChoices = LightningPollSpeechHelper.parseUserSpeechToLightningPoll(userSpeech: finalVoiceTextResult)
-                
-                
-                // create firebase poll
-//                self.writeNewLightningPoll(userID: "anon", title: finalVoiceTextResult, poll_description: "my first description", origin_lat: 100, origin_lng: -100, is_open: false)
-                
+                let finalVoiceTextResult = result.bestTranscription.formattedString
                 isFinal = result.isFinal
+                
+                if(isFinal == true) {
+                    // attempt to parse binary choices from user input
+                    let binChoices = LightningPollSpeechHelper.parseUserSpeechToLightningPoll(userSpeech: finalVoiceTextResult)
+                    print(binChoices)
+                    // create firebase poll
+                    FirebaseCRUDHelper.writeNewLightningPoll(userID: "anonymus", title: finalVoiceTextResult, poll_description: "default description", origin_lat: self.userLatitude, origin_lng: self.userLongitude, is_open: false, option_1: binChoices[0], option_2: binChoices[1])
+                }
             }
             
             if error != nil || isFinal {
