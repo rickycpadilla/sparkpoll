@@ -36,8 +36,8 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
 //        // attempting to write to firebase TEST
 //        self.writeNewLightningPoll(userID: "anon", title: "my first poll", poll_description: "my first description", origin_lat: 100, origin_lng: -100, is_open: false)
         
-     let speechMapper = LightningPollSpeechHelper.parseUserSpeechToLightningPoll(userSpeech: "Trump or Hillary")
-    print(speechMapper)
+//     let speechMapper = LightningPollSpeechHelper.parseUserSpeechToLightningPoll(userSpeech: "Trump or Hillary")
+//    print(speechMapper)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -72,22 +72,6 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-   
-    
-    
-    @IBAction func touchDown(_ sender: AnyObject) {
-        print("button pressed")
-        HoldAndRelease.setTitle("Touch Down", for: UIControlState.normal)
-    }
-    
-    
-    @IBAction func touchUp(_ sender: AnyObject) {
-        print("button released")
-        HoldAndRelease.setTitle("Touch Up", for: UIControlState.normal)
-    }
-    
-    
     
     // [START Firebase create new lightning poll methods]
     func writeNewLightningPoll(userID: String, title: String, poll_description: String, origin_lat: Int, origin_lng: Int, is_open: Bool) {
@@ -140,6 +124,14 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
             
             if let result = result {
                 self.textView.text = result.bestTranscription.formattedString
+//                let finalVoiceTextResult = result.bestTranscription.formattedString
+                // attempt to parse binary choices from user input
+//                let binChoices = LightningPollSpeechHelper.parseUserSpeechToLightningPoll(userSpeech: finalVoiceTextResult)
+                
+                
+                // create firebase poll
+//                self.writeNewLightningPoll(userID: "anon", title: finalVoiceTextResult, poll_description: "my first description", origin_lat: 100, origin_lng: -100, is_open: false)
+                
                 isFinal = result.isFinal
             }
             
@@ -192,6 +184,21 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
         } else {
             try! startRecording()
             startRecordingButton.setTitle("Stop recording", for: [])
+        }
+    }
+    
+    // begin attempt to click and hold to record.
+    @IBAction func touchDown(_ sender: AnyObject) {
+        print("button pressed")
+        try! startRecording()
+        HoldAndRelease.setTitle("Recording Started", for: UIControlState.normal)
+    }
+    
+    @IBAction func touchUp(_ sender: AnyObject) {
+        if audioEngine.isRunning {
+            audioEngine.stop()
+            recognitionRequest?.endAudio()
+            HoldAndRelease.setTitle("Recording Ended", for: UIControlState.normal)
         }
     }
 }
