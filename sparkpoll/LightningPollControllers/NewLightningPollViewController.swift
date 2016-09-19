@@ -22,6 +22,7 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
     @IBOutlet weak var pollNameTextInput: UITextField!
     @IBOutlet weak var startRecordingButton: UIButton!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var HoldAndRelease: UIButton!
     
     override func viewDidLoad() {
         // [START create_database_reference]
@@ -71,6 +72,23 @@ class NewLightningPollViewController: UIViewController, SFSpeechRecognizerDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+   
+    
+    
+    @IBAction func touchDown(_ sender: AnyObject) {
+        print("button pressed")
+        HoldAndRelease.setTitle("Touch Down", for: UIControlState.normal)
+    }
+    
+    
+    @IBAction func touchUp(_ sender: AnyObject) {
+        print("button released")
+        HoldAndRelease.setTitle("Touch Up", for: UIControlState.normal)
+    }
+    
+    
+    
     // [START Firebase create new lightning poll methods]
     func writeNewLightningPoll(userID: String, title: String, poll_description: String, origin_lat: Int, origin_lng: Int, is_open: Bool) {
         // attempting to create a new lightning poll on firebase
