@@ -248,11 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sparkpoll/HelperClasses/PollsWithinRangeHelper.swift"
-            timestampString = "496025804.02314"
+            timestampString = "496026313.078745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "instantiateFirebasePollsObservable()"
             landmarkType = "7">
             <Locations>
@@ -312,11 +312,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sparkpoll/HelperClasses/PollsWithinRangeHelper.swift"
-            timestampString = "496025804.02314"
+            timestampString = "496026313.078745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "instantiateFirebasePollsObservable()"
             landmarkType = "7">
          </BreakpointContent>
