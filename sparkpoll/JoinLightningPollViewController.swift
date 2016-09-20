@@ -15,6 +15,8 @@ class JoinLightningPollViewController: UIViewController, CLLocationManagerDelega
     private let locManager = CLLocationManager()
     private var userLatitude: Float64 = 0
     private var userLongitude: Float64 = 0
+    private var pollLatDouble: Float64 = 0
+    private var pollLngDouble: Float64 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,20 +53,22 @@ class JoinLightningPollViewController: UIViewController, CLLocationManagerDelega
                 
                 if let unwrapped = poll.value(forKey: "origin_lat") {
                     let unwrappedLatStr = String(describing: unwrapped)
-                    let pollLatDouble = Double(unwrappedLatStr)
+                    self.pollLatDouble = Double(unwrappedLatStr)!
                 }
                 if let unwrappedLng = poll.value(forKey: "origin_lng") {
                     let unwrappedLngStr = String(describing: unwrappedLng)
-                    let pollLngDouble = Double(unwrappedLngStr)
+                    self.pollLngDouble = Double(unwrappedLngStr)!
                 }
 //                print(pollLat, pollLng)
                 
                 //create location from points in firebase
-//                let pollOriginLocation = CLLocation(latitude: poll.value(forKey: "origin_lat"), longitude: poll.value(forKey: "origin_lng"))
-                // calculate distance between current location and poll coordinates.
-//                DistanceCalculationHelper.calculateDistanceBetweenTwoPoints(point_1: locManager.location, point_2: pollOriginLocation)
+                let pollOriginLocation = CLLocation(latitude: self.pollLatDouble, longitude: self.pollLngDouble)
                 
-                poll.setValue("woot", forKey: "test")
+                print(pollOriginLocation)
+                // calculate distance between current location and poll coordinates.
+                let distance = DistanceCalculationHelper.calculateDistanceBetweenTwoPoints(point_1: self.locManager.location!, point_2: pollOriginLocation)
+                print("Distance here", distance)
+                poll.setValue(distance, forKey: "client_distance")
 //                print("\(poll_id): \(poll.value(forKey: "origin_lat"))")
             }
             
