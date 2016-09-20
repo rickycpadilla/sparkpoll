@@ -8,25 +8,30 @@
 
 import UIKit
 import Firebase
-import FirebaseDatabase
 
 class JoinLightningPollViewController: UIViewController {
-    var ref: FIRDatabaseReference!
-    
-    @IBAction func buttonclicked(_ sender: AnyObject) {
-        
-        
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = FIRDatabase.database().reference()
+        //PollWithinRangeHelper.instantiateFirebasePollsObservable()
+        var currentPollData: [ String: AnyObject ] = [:]
+        var currentPollDataWithDistance: [ String: AnyObject ] = [:]
         
+        let ref: FIRDatabaseReference! = FIRDatabase.database().reference()
         ref.child("lightning_polls").observe(FIRDataEventType.value, with: { (snapshot) in
-            let postDict = snapshot.value as! [String : AnyObject]
-            print("polls here", postDict)
+            currentPollData = snapshot.value as! [String : AnyObject]
+            for (poll_id, poll) in currentPollData {
+                
+                // calculate distance between current location and poll coordinates.
+                
+                poll.setValue("woot", forKey: "test")
+                //                print("\(poll_id): \(poll.value(forKey: "origin_lat"))")
+            }
+            
+            //            print(currentPollData)
+            
+            print("polls here", currentPollData)
         })
-        
     }
 
     override func didReceiveMemoryWarning() {

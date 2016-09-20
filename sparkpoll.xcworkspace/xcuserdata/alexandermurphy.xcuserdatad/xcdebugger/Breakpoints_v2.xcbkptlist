@@ -247,13 +247,61 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "sparkpoll/JoinLightningPollViewController.swift"
-            timestampString = "496009326.563307"
+            filePath = "sparkpoll/HelperClasses/PollsWithinRangeHelper.swift"
+            timestampString = "496025804.02314"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "instantiateFirebasePollsObservable()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static sparkpoll.PollWithinRangeHelper.(instantiateFirebasePollsObservable () -&gt; ()).(closure #1)"
+                  moduleName = "sparkpoll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandermurphy/Documents/galvanize/capstone/sparkpoll/sparkpoll/HelperClasses/PollsWithinRangeHelper.swift"
+                  timestampString = "496022636.573095"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "496">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static sparkpoll.PollWithinRangeHelper.(instantiateFirebasePollsObservable () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "sparkpoll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandermurphy/Documents/galvanize/capstone/sparkpoll/sparkpoll/HelperClasses/PollsWithinRangeHelper.swift"
+                  timestampString = "496022636.575347"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "sparkpoll/Extensions/DictonaryMapExtension.swift"
+            timestampString = "496024354.691949"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "map(transform:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -263,46 +311,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "sparkpoll/JoinLightningPollViewController.swift"
-            timestampString = "496009326.563307"
+            filePath = "sparkpoll/HelperClasses/PollsWithinRangeHelper.swift"
+            timestampString = "496025804.02314"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "instantiateFirebasePollsObservable()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "sparkpoll.JoinLightningPollViewController.viewDidLoad () -&gt; ()"
-                  moduleName = "sparkpoll"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandermurphy/Documents/galvanize/capstone/sparkpoll/sparkpoll/JoinLightningPollViewController.swift"
-                  timestampString = "496009201.950195"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "523">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "sparkpoll.JoinLightningPollViewController.(viewDidLoad () -&gt; ()).(closure #1)"
-                  moduleName = "sparkpoll"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandermurphy/Documents/galvanize/capstone/sparkpoll/sparkpoll/JoinLightningPollViewController.swift"
-                  timestampString = "496009201.95184"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "585">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

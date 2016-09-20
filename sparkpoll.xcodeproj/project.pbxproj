@@ -39,6 +39,7 @@
 		B0AEB40A1D904A5E00E4FB5E /* FirebaseCRUDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB4091D904A5E00E4FB5E /* FirebaseCRUDHelper.swift */; };
 		B0AEB40C1D90782200E4FB5E /* distanceCalculationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB40B1D90782200E4FB5E /* distanceCalculationHelper.swift */; };
 		B0AEB40E1D907B0700E4FB5E /* JoinLightningPollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB40D1D907B0700E4FB5E /* JoinLightningPollViewController.swift */; };
+		B0AEB4101D9085D000E4FB5E /* PollsWithinRangeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB40F1D9085D000E4FB5E /* PollsWithinRangeHelper.swift */; };
 		B7CC3E6FC55990D11A080F43 /* Pods_sparkpoll_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0064D29CD99475BEF94D80 /* Pods_sparkpoll_WatchKit_Extension.framework */; };
 		E1F3FB658E4B046B3E792CD8 /* Pods_sparkpollTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A72A0B694367BADC1BF5394 /* Pods_sparkpollTests.framework */; };
 /* End PBXBuildFile section */
@@ -148,6 +149,7 @@
 		B0AEB4091D904A5E00E4FB5E /* FirebaseCRUDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseCRUDHelper.swift; sourceTree = "<group>"; };
 		B0AEB40B1D90782200E4FB5E /* distanceCalculationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = distanceCalculationHelper.swift; path = HelperClasses/distanceCalculationHelper.swift; sourceTree = "<group>"; };
 		B0AEB40D1D907B0700E4FB5E /* JoinLightningPollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinLightningPollViewController.swift; sourceTree = "<group>"; };
+		B0AEB40F1D9085D000E4FB5E /* PollsWithinRangeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollsWithinRangeHelper.swift; path = HelperClasses/PollsWithinRangeHelper.swift; sourceTree = "<group>"; };
 		BD2448A20FA185EE21ED0639 /* Pods-sparkpoll WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll WatchKit App/Pods-sparkpoll WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		C824BFEDB909EDB2143DF904 /* Pods-sparkpollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpollTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpollTests/Pods-sparkpollTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BBC663B196B597B368BC13 /* Pods-sparkpoll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparkpoll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparkpoll/Pods-sparkpoll.debug.xcconfig"; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				B0AEB4041D8F641400E4FB5E /* LightningPollSpeechHelper.swift */,
 				B0AEB4091D904A5E00E4FB5E /* FirebaseCRUDHelper.swift */,
 				B0AEB40B1D90782200E4FB5E /* distanceCalculationHelper.swift */,
+				B0AEB40F1D9085D000E4FB5E /* PollsWithinRangeHelper.swift */,
 			);
 			name = HelperClasses;
 			sourceTree = "<group>";
@@ -800,6 +803,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0AEB3FC1D8F3ACA00E4FB5E /* LightningPoll.swift in Sources */,
+				B0AEB4101D9085D000E4FB5E /* PollsWithinRangeHelper.swift in Sources */,
 				B0AEB3FE1D8F523A00E4FB5E /* BinaryQuestion.swift in Sources */,
 				B0280BE51D8E04D7004A2AAD /* Monster.swift in Sources */,
 				B0AEB4001D8F524400E4FB5E /* BinaryAnswer.swift in Sources */,
