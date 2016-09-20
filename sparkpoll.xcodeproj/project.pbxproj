@@ -11,6 +11,8 @@
 		2F3615A3E5568F9F13C24F28 /* Pods_sparkpollUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94553E4C347CA25E370AB324 /* Pods_sparkpollUITests.framework */; };
 		AFD3E59569DC08B181B90F84 /* Pods_sparkpoll_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931F1049BD8482D62FD130DD /* Pods_sparkpoll_WatchKit_App.framework */; };
 		B0016AEF1D8E52C0004719E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0016AEE1D8E52C0004719E7 /* GoogleService-Info.plist */; };
+		B01F42E01D9199F100EB6089 /* SplashScreenUI in Resources */ = {isa = PBXBuildFile; fileRef = B01F42DF1D9199F100EB6089 /* SplashScreenUI */; };
+		B01F42E21D919A3200EB6089 /* Commons in Resources */ = {isa = PBXBuildFile; fileRef = B01F42E11D919A3200EB6089 /* Commons */; };
 		B0280BE11D8DFDF1004A2AAD /* PollMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */; };
 		B0280BE31D8E0381004A2AAD /* PollDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */; };
 		B0280BE51D8E04D7004A2AAD /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE41D8E04D7004A2AAD /* Monster.swift */; };
@@ -18,7 +20,6 @@
 		B063A0E01D8D0C3B008714A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */; };
 		B063A0E21D8D0C3B008714A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A0E11D8D0C3B008714A5 /* ViewController.swift */; };
 		B063A0E51D8D0C3B008714A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063A0E31D8D0C3B008714A5 /* Main.storyboard */; };
-		B063A0E71D8D0C3B008714A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B063A0E61D8D0C3B008714A5 /* Assets.xcassets */; };
 		B063A0EA1D8D0C3B008714A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063A0E81D8D0C3B008714A5 /* LaunchScreen.storyboard */; };
 		B063A0F51D8D0C3C008714A5 /* sparkpollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A0F41D8D0C3C008714A5 /* sparkpollTests.swift */; };
 		B063A1001D8D0C3C008714A5 /* sparkpollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063A0FF1D8D0C3C008714A5 /* sparkpollUITests.swift */; };
@@ -112,6 +113,8 @@
 		931F1049BD8482D62FD130DD /* Pods_sparkpoll_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkpoll_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94553E4C347CA25E370AB324 /* Pods_sparkpollUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparkpollUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0016AEE1D8E52C0004719E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B01F42DF1D9199F100EB6089 /* SplashScreenUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SplashScreenUI; sourceTree = "<group>"; };
+		B01F42E11D919A3200EB6089 /* Commons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Commons; sourceTree = "<group>"; };
 		B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollMasterTableViewController.swift; path = PollTableControllers/PollMasterTableViewController.swift; sourceTree = "<group>"; };
 		B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollDetailViewController.swift; path = PollTableControllers/PollDetailViewController.swift; sourceTree = "<group>"; };
 		B0280BE41D8E04D7004A2AAD /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
@@ -120,7 +123,6 @@
 		B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B063A0E11D8D0C3B008714A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B063A0E41D8D0C3B008714A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B063A0E61D8D0C3B008714A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B063A0E91D8D0C3B008714A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B063A0EB1D8D0C3B008714A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B063A0F01D8D0C3B008714A5 /* sparkpollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sparkpollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +218,8 @@
 		B063A0D31D8D0C3B008714A5 = {
 			isa = PBXGroup;
 			children = (
+				B01F42E11D919A3200EB6089 /* Commons */,
+				B01F42DF1D9199F100EB6089 /* SplashScreenUI */,
 				B063A0DE1D8D0C3B008714A5 /* sparkpoll */,
 				B063A0F31D8D0C3B008714A5 /* sparkpollTests */,
 				B063A0FE1D8D0C3C008714A5 /* sparkpollUITests */,
@@ -244,7 +248,6 @@
 			children = (
 				B0AEB4061D8F72BB00E4FB5E /* Extensions */,
 				B0AEB4031D8F63E600E4FB5E /* HelperClasses */,
-				B063A0E61D8D0C3B008714A5 /* Assets.xcassets */,
 				B063A0DF1D8D0C3B008714A5 /* AppDelegate.swift */,
 				B0AEB3F71D8F382700E4FB5E /* Storyboards */,
 				B0AEB3F61D8F37F300E4FB5E /* Configuration */,
@@ -561,8 +564,9 @@
 			files = (
 				B063A0EA1D8D0C3B008714A5 /* LaunchScreen.storyboard in Resources */,
 				B0016AEF1D8E52C0004719E7 /* GoogleService-Info.plist in Resources */,
-				B063A0E71D8D0C3B008714A5 /* Assets.xcassets in Resources */,
+				B01F42E21D919A3200EB6089 /* Commons in Resources */,
 				B063A0E51D8D0C3B008714A5 /* Main.storyboard in Resources */,
+				B01F42E01D9199F100EB6089 /* SplashScreenUI in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

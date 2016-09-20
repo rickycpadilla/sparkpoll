@@ -41,16 +41,14 @@ class JoinLightningPollViewController: UIViewController, CLLocationManagerDelega
         
         //PollWithinRangeHelper.instantiateFirebasePollsObservable()
         var currentPollData: [ String: AnyObject ] = [:]
-        var currentPollDataWithDistance: [ String: AnyObject ] = [:]
+        var currentPollDataWithRange: [ String: AnyObject ] = [:]
         
         let ref: FIRDatabaseReference! = FIRDatabase.database().reference()
         ref.child("lightning_polls").observe(FIRDataEventType.value, with: { (snapshot) in
             currentPollData = snapshot.value as! [String : AnyObject]
-            
             //loop through polls, lets figure out how far away they are
             for (poll_id, poll) in currentPollData {
                 //get long and lat from firebase
-                
                 if let unwrapped = poll.value(forKey: "origin_lat") {
                     let unwrappedLatStr = String(describing: unwrapped)
                     self.pollLatDouble = Double(unwrappedLatStr)!
@@ -59,21 +57,19 @@ class JoinLightningPollViewController: UIViewController, CLLocationManagerDelega
                     let unwrappedLngStr = String(describing: unwrappedLng)
                     self.pollLngDouble = Double(unwrappedLngStr)!
                 }
-//                print(pollLat, pollLng)
-                
                 //create location from points in firebase
                 let pollOriginLocation = CLLocation(latitude: self.pollLatDouble, longitude: self.pollLngDouble)
-                
-                print(pollOriginLocation)
                 // calculate distance between current location and poll coordinates.
                 let distance = DistanceCalculationHelper.calculateDistanceBetweenTwoPoints(point_1: self.locManager.location!, point_2: pollOriginLocation)
-                print("Distance here", distance)
+                // range here
+                print("distance here", distance)
+                if (distance > 100) {
+                    currentPollData.removeValue(forKey: poll_id)
+                }
                 poll.setValue(distance, forKey: "client_distance")
 //                print("\(poll_id): \(poll.value(forKey: "origin_lat"))")
             }
             
-            //            print(currentPollData)
-//            print("current coordinates here", self.userLatitude, self.userLongitude )
             print("polls here", currentPollData)
         })
     }
