@@ -18,6 +18,12 @@ class JoinLightningPollViewController: UIViewController, CLLocationManagerDelega
     private var pollLatDouble: Float64 = 0
     private var pollLngDouble: Float64 = 0
     
+    @IBOutlet weak var pollCount: UILabel!
+    @IBOutlet weak var pollTitle: UILabel!
+    @IBOutlet weak var pollDistance: UILabel!
+    @IBOutlet weak var pollOption1: UILabel!
+    @IBOutlet weak var pollOption2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,8 +73,12 @@ class JoinLightningPollViewController: UIViewController, CLLocationManagerDelega
                     currentPollData.removeValue(forKey: poll_id)
                 }
                 poll.setValue(distance, forKey: "client_distance")
+                
 //                print("\(poll_id): \(poll.value(forKey: "origin_lat"))")
             }
+            
+            // attempt to set label text
+            self.pollCount.text = String(currentPollData.count)
             
             print("polls here", currentPollData)
         })
