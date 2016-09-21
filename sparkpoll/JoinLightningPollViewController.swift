@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import MapKit
 import Foundation
+import FirebaseDatabaseUI
 
 class JoinLightningPollViewController: UIViewController, CLLocationManagerDelegate {
     private let locManager = CLLocationManager()

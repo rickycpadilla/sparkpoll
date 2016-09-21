@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "428049E31C6983434E6CDD1653FC26C6"
+               BlueprintIdentifier = "64E019E9B6BBE98347F26F5ACE987248"
                BuildableName = "Pods_sparkpoll.framework"
                BlueprintName = "Pods-sparkpoll"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "428049E31C6983434E6CDD1653FC26C6"
+            BlueprintIdentifier = "64E019E9B6BBE98347F26F5ACE987248"
             BuildableName = "Pods_sparkpoll.framework"
             BlueprintName = "Pods-sparkpoll"
             ReferencedContainer = "container:Pods.xcodeproj">

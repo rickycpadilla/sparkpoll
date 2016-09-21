@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to SparkPoll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XV-72-16v">
-                                <frame key="frameInset" minX="35" minY="76" width="168" height="21"/>
+                                <frame key="frameInset" minX="100" minY="77" width="168" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5u-D8-D8o">
-                                <frame key="frameInset" minX="47" minY="150" width="160" height="30"/>
+                                <frame key="frameInset" minX="86" minY="148" width="196" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.68185536649214662" green="0.68185536649214662" blue="0.68185536649214662" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.015543193719999999" green="0.0" blue="0.00031914772369999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,48 +35,35 @@
                                     <segue destination="XJr-Tr-DlB" kind="show" id="5SA-Mt-dhW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA9-dL-s1s">
-                                <frame key="frameInset" minX="47" minY="195" width="159" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.6899106386664613" green="0.6899106386664613" blue="0.6899106386664613" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.015543193719999999" green="0.0" blue="0.00031914772369999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Join Lightning Poll"/>
-                                <connections>
-                                    <segue destination="QPd-0d-79B" kind="show" id="zx5-DG-T1c"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFv-rk-xsT">
-                                <frame key="frameInset" minX="35" minY="423" width="144" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68991063870000002" green="0.68991063870000002" blue="0.68991063870000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Show User Location"/>
-                                <connections>
-                                    <action selector="showUserLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HA-CF-45T"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQA-X4-dhT">
-                                <frame key="frameInset" minX="77" minY="524" width="153" height="21"/>
+                                <frame key="frameInset" minX="111" minY="626" width="153" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye0-fh-zNy">
-                                <frame key="frameInset" minX="84" minY="495" width="128" height="21"/>
+                                <frame key="frameInset" minX="111" minY="597" width="152" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asB-bn-fsA">
-                                <frame key="frameInset" minX="47" minY="233" width="159" height="30"/>
+                                <frame key="frameInset" minX="64" minY="294" width="246" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.68991063870000002" green="0.68991063870000002" blue="0.68991063870000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.015543193719999999" green="0.0" blue="0.00031914772369999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Sign In"/>
+                                <state key="normal" title="Join Lightning Poll Table View"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA9-dL-s1s">
+                                <frame key="frameInset" minX="86" minY="223" width="196" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.6899106386664613" green="0.6899106386664613" blue="0.6899106386664613" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.015543193719999999" green="0.0" blue="0.00031914772369999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Join Lightning Poll"/>
                                 <connections>
-                                    <segue destination="4gT-fI-5Ld" kind="presentation" id="ByR-uh-mOd"/>
+                                    <segue destination="QPd-0d-79B" kind="show" id="zx5-DG-T1c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -180,6 +167,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYE-xg-m1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.79999999999995" y="491.60419790104953"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="IP8-8Q-IA5">
+            <objects>
+                <tableViewController id="nGz-hT-6pv" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NWl-JQ-M0w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="htX-2L-kXQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htX-2L-kXQ" id="aU2-XI-Xxn">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nGz-hT-6pv" id="TdF-qq-08B"/>
+                            <outlet property="delegate" destination="nGz-hT-6pv" id="ynD-nk-J2L"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9p-6v-fqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="1158"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S2B-Nl-4r2">
@@ -467,11 +482,11 @@
                                 <rect key="frame" x="0.0" y="122" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ckm-V7-V2J" id="PkP-Fe-Prn">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G9e-mf-n9i">
-                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <frame key="frameInset" minX="15" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>

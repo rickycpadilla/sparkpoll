@@ -7,7 +7,7 @@ target 'sparkpoll' do
     pod 'Firebase'
     pod 'Firebase/Database'
   # Pods for sparkpoll
-
+    pod 'FirebaseUI', '~> 0.5'       # Pull in all Firebase UI features
   target 'sparkpollTests' do
     inherit! :search_paths
     # Pods for testing
