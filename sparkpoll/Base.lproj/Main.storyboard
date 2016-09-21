@@ -55,6 +55,9 @@
                                 <color key="backgroundColor" red="0.68991063870000002" green="0.68991063870000002" blue="0.68991063870000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.015543193719999999" green="0.0" blue="0.00031914772369999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Join Lightning Poll Table View"/>
+                                <connections>
+                                    <segue destination="nGz-hT-6pv" kind="show" id="DGM-Jl-A04"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA9-dL-s1s">
                                 <frame key="frameInset" minX="86" minY="223" width="196" height="36"/>
@@ -168,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="928.79999999999995" y="491.60419790104953"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Join Poll Table View Controller-->
         <scene sceneID="IP8-8Q-IA5">
             <objects>
-                <tableViewController id="nGz-hT-6pv" sceneMemberID="viewController">
+                <tableViewController id="nGz-hT-6pv" customClass="JoinPollTableViewController" customModule="sparkpoll" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NWl-JQ-M0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +197,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9p-6v-fqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="1158"/>
+            <point key="canvasLocation" x="238" y="979"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S2B-Nl-4r2">

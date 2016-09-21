@@ -13,6 +13,7 @@
 		B0016AEF1D8E52C0004719E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0016AEE1D8E52C0004719E7 /* GoogleService-Info.plist */; };
 		B01F42E01D9199F100EB6089 /* SplashScreenUI in Resources */ = {isa = PBXBuildFile; fileRef = B01F42DF1D9199F100EB6089 /* SplashScreenUI */; };
 		B01F42E21D919A3200EB6089 /* Commons in Resources */ = {isa = PBXBuildFile; fileRef = B01F42E11D919A3200EB6089 /* Commons */; };
+		B025C5DA1D923D39009E706F /* JoinPollTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B025C5D91D923D39009E706F /* JoinPollTableViewController.swift */; };
 		B0280BE11D8DFDF1004A2AAD /* PollMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */; };
 		B0280BE31D8E0381004A2AAD /* PollDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */; };
 		B0280BE51D8E04D7004A2AAD /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0280BE41D8E04D7004A2AAD /* Monster.swift */; };
@@ -115,6 +116,7 @@
 		B0016AEE1D8E52C0004719E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B01F42DF1D9199F100EB6089 /* SplashScreenUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SplashScreenUI; sourceTree = "<group>"; };
 		B01F42E11D919A3200EB6089 /* Commons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Commons; sourceTree = "<group>"; };
+		B025C5D91D923D39009E706F /* JoinPollTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JoinPollTableViewController.swift; path = ViewControllers/JoinPollTableViewController.swift; sourceTree = "<group>"; };
 		B0280BE01D8DFDF1004A2AAD /* PollMasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollMasterTableViewController.swift; path = PollTableControllers/PollMasterTableViewController.swift; sourceTree = "<group>"; };
 		B0280BE21D8E0381004A2AAD /* PollDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollDetailViewController.swift; path = PollTableControllers/PollDetailViewController.swift; sourceTree = "<group>"; };
 		B0280BE41D8E04D7004A2AAD /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				B0280BE61D8E2E64004A2AAD /* NewLightningPollViewController.swift */,
 				B063A0E11D8D0C3B008714A5 /* ViewController.swift */,
 				B0AEB40D1D907B0700E4FB5E /* JoinLightningPollViewController.swift */,
+				B025C5D91D923D39009E706F /* JoinPollTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -819,6 +822,7 @@
 				B0AEB40A1D904A5E00E4FB5E /* FirebaseCRUDHelper.swift in Sources */,
 				B0AEB40E1D907B0700E4FB5E /* JoinLightningPollViewController.swift in Sources */,
 				B0280BE31D8E0381004A2AAD /* PollDetailViewController.swift in Sources */,
+				B025C5DA1D923D39009E706F /* JoinPollTableViewController.swift in Sources */,
 				B0AEB4081D8F72D100E4FB5E /* Trim.swift in Sources */,
 				B0AEB4021D8F544A00E4FB5E /* User.swift in Sources */,
 				B063A0E01D8D0C3B008714A5 /* AppDelegate.swift in Sources */,
