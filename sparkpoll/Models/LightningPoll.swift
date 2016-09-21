@@ -13,11 +13,11 @@ class LightningPoll: NSObject {
     var uid: String
     var title: String
     var poll_description: String
-    var origin_lat: Int
-    var origin_lng: Int
+    var origin_lat: Double
+    var origin_lng: Double
     var is_open: Bool
     
-    init(uid: String, title: String, description: String, origin_lat: Int, origin_lng: Int, is_open: Bool) {
+    init(uid: String, title: String, description: String, origin_lat: Double, origin_lng: Double, is_open: Bool) {
         self.uid = uid
         self.title = title
         self.poll_description = description

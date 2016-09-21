@@ -15,19 +15,36 @@ import FirebaseDatabaseUI
 class JoinPollTableViewController: UITableViewController {
     let firebaseRef = FIRDatabase.database().reference().child("lightning_polls")
     var dataSource: FirebaseTableViewDataSource!
+    var pollDataSource: FirebaseTableViewDataSource?
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.dataSource = FirebaseTableViewDataSource(ref: self.firebaseRef, cellReuseIdentifier: "woot", view: self.tableView)
         
         self.tableView.dataSource = self.dataSource
         self.dataSource = FirebaseTableViewDataSource(ref: self.firebaseRef, cellReuseIdentifier: "woot", view: self.tableView)
         self.tableView.dataSource = self.dataSource
+        
+        
+////        // attempt to get data from firebase and use poll model
+//        pollDataSource = FirebaseTableViewDataSource.init(query: self.firebaseRef,
+//                                                          modelClass: LightningPoll.self,
+//                                                          nibNamed: "JoinPollTableViewCell",
+//                                                          cellReuseIdentifier: "woot",
+//                                                          view: self.tableView)
+//        pollDataSource?.populateCell() {
+//            let cell = $0 as! JoinPollTableViewCell
+//            let poll = $1 as! LightningPoll
+//            cell.pollTitleLabel.text = poll.title
+//        }
+//        
+
         
         self.dataSource.populateCell { (cell: UITableViewCell, obj: NSObject) -> Void in
             let snap = obj as! FIRDataSnapshot
-            
+            print(snap)
             // Populate cell as you see fit, like as below
             cell.textLabel?.text = snap.key as String
         }
